@@ -82,13 +82,39 @@ a {
   .navigation > ul > li {
     padding: 0 20px;
   }
+  .navigation > ul > li.has-children {
+    position: relative;
+  }
+  .navigation > ul > li.has-children > a {
+    cursor: default;
+  }
   .navigation > ul > li > a {
-    color: #fff;
+    color: #FFFFFF;
     font-weight: bold;
   }
   .navigation > ul > li > a.dark {
     color: #848484;
     font-weight: bold;
+  }
+  .navigation > ul > li > a + ul.children {
+    display: none;
+    left: calc(50% - (250px / 2));
+    padding: 15px 0 0;
+    position: absolute;
+    text-align: center;
+    width: 250px;
+  }
+  .navigation > ul > li > a + ul.children > li {}
+  .navigation > ul > li > a + ul.children > li > a {
+    background-color: #606060;
+    color: #FFFFFF;
+    display: block;
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+  .navigation > ul > li > a + ul.children > li > a:hover {
+    background-color: #FFFFFF;
+    color: #848484;
   }
   .banner {
     margin: -110px 0 0 0;
@@ -181,7 +207,7 @@ a {
   }
   .banner > img {
     transition: all 0s ease 0s;
-    display: none; 
+    display: none;
   }
   .banner > img[active] {
     display: block;

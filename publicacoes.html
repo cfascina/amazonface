@@ -35,7 +35,14 @@
             <li><a class="dark" href="contexto.html">Contexto</a></li>
             <li><a class="dark" href="programa.html">Programa</a></li>
             <li><a class="dark" href="equipe.html">Equipe</a></li>
-            <li><a class="dark" href="publicacoes.html">Publica&ccedil;&otilde;es</a></li>
+            <li class="has-children">
+              <a class="dark" href="#">Publicações</a>
+              <ul class="children">
+                <li><a class="dark" href="publicacoes.html">Publicações Científicas</a></li>
+                <li><a class="dark" target="_blank" href="assets/pdf/portaria-mcti-1038-2015-amazon-face.pdf">Portaria Ministerial do AmazonFACE</a></li>
+                <li><a class="dark" target="_blank" href="assets/pdf/amazon-face-data-policy.pdf">Política de Dados do AmazonFACE</a></li>
+              </ul>
+            </li>
             <li><a class="dark" href="contato.html">Contato</a></li>
           </ul>
         </nav>
@@ -47,6 +54,9 @@
     </div>
     <div class="container publicacoes center-pages">
       <div>
+        <p>
+          Fleischer, K. et al., 2019. <strong><a style="color: #2062ae; text-decoration: underline;" target="blanck" href="https://www.nature.com/articles/s41561-019-0404-9">Amazon forest response to CO2 fertilization dependent on plant phosphorus acquisition.</a></strong> Nature Geoscience 12: 736–741.
+        </p>
         <p>
           Pereira, I. S, H. E. M. Nascimento, M. B. Vicari, M. Disney, E. DeLucia... & F. Hofhansl. 2019. <strong><a style="color: #2062ae; text-decoration: underline;" target="blanck" href="https://www.mdpi.com/2072-4292/11/5/510"> Performance of laser-based electronic devices for structural analysis of Amazonian terra-firme forests.</a></strong> Remote Sensing 11: 510.
         </p>
@@ -90,6 +100,7 @@
       <p class="copyright-footer">Copyright &copy; AmazonFACE.</p>
     </footer>
 
-    <script src="assets/app.js"></script>
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/sub-menu.js"></script>
   </body>
 </html>
