@@ -30,13 +30,21 @@
         <label for="menu" class="menu-responsive">
           <img src="../assets/images/menu.svg">
         </label>
+
         <nav class="navigation">
           <ul class="flex">
             <li><a href="home.html">Home</a></li>
             <li><a href="context.html">Context</a></li>
             <li><a href="program.html">Program</a></li>
             <li><a href="people.html">People</a></li>
-            <li><a href="publications.html">Publications</a></li>
+            <li class="has-children">
+              <a href="#">Publications</a>
+              <ul class="children">
+                <li><a class="dark" href="publications.html">Scientific Publications</a></li>
+                <li><a class="dark" target="_blank" href="../assets/pdf/portaria-mcti-1038-2015-amazon-face.pdf">Ministerial Decree of AmazonFACE</a></li>
+                <li><a class="dark" target="_blank" href="../assets/pdf/amazon-face-data-policy.pdf">AmazonFACE Data Policy</a></li>
+              </ul>
+            </li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
@@ -176,8 +184,10 @@
       <img class="support-footer" src="../assets/images/apoios.png">
       <p class="copyright-footer">Copyright &copy; AmazonFACE.</p>
     </footer>
-    <script src="../assets/app.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="../assets/carousel.min.js"></script>
+
+    <script src="../assets/js/jquery-3.4.1.min.js"></script>
+    <script src="../assets/js/sub-menu.js"></script>
+    <script src="../assets/js/carousel.min.js"></script>
+    <script src="../assets/js/home-banner.js"></script>
   </body>
 </html>

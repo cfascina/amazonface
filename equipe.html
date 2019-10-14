@@ -26,13 +26,21 @@
         <label for="menu" class="menu-responsive">
           <img src="assets/images/icones/menu-dark.svg">
         </label>
+
         <nav class="navigation">
           <ul class="flex">
-            <li><a class="dark" href="index.html">Início</a></li>
+            <li><a class="dark" href="index.html">In&iacute;cio</a></li>
             <li><a class="dark" href="contexto.html">Contexto</a></li>
             <li><a class="dark" href="programa.html">Programa</a></li>
             <li><a class="dark" href="equipe.html">Equipe</a></li>
-            <li><a class="dark" href="publicacoes.html">Publicações</a></li>
+            <li class="has-children">
+              <a class="dark" href="#">Publicações</a>
+              <ul class="children">
+                <li><a class="dark" href="publicacoes.html">Publicações Científicas</a></li>
+                <li><a class="dark" target="_blank" href="assets/pdf/portaria-mcti-1038-2015-amazon-face.pdf">Portaria Ministerial do AmazonFACE</a></li>
+                <li><a class="dark" target="_blank" href="assets/pdf/amazon-face-data-policy.pdf">Política de Dados do AmazonFACE</a></li>
+              </ul>
+            </li>
             <li><a class="dark" href="contato.html">Contato</a></li>
           </ul>
         </nav>
@@ -176,6 +184,7 @@
       <p class="copyright-footer">Copyright &copy; AmazonFACE.</p>
     </footer>
 
-    <script src="assets/app.js"></script>
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/sub-menu.js"></script>
   </body>
 </html>
