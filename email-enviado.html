@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AmazonFace</title>
+    <title>AmazonFACE</title>
     <link rel="shortcut icon" type="image/png" href="assets/images/logo-amazonface.png">
-    <link rel="stylesheet" href="assets/estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="assets/estilos.css">
   </head>
   <body id="site">
+
+    <div class="controls">
+      <ul>
+        <li><a href="email-enviado.html"><img width="24" src="assets/images/icones/pt-BR.ico"></a></li>
+        <li><a href="en-US/email-send.html"><img width="24" src="assets/images/icones/en-US.ico"></a></li>
+        <li><a target="_blank" href="https://www.facebook.com/amazonface/"><img width="24" src="assets/images/icones/facebook.png"></a></li>
+      </ul>
+    </div>
+
     <header class="center-content">
       <div class="container">
         <div class="logotype">
@@ -19,28 +28,34 @@
         <label for="menu" class="menu-responsive">
           <img src="assets/images/icones/menu-dark.svg">
         </label>
+
         <nav class="navigation">
           <ul class="flex">
-            <li><a class="dark" href="index.html">Início</a></li>
+            <li><a class="dark" href="index.html">In&iacute;cio</a></li>
             <li><a class="dark" href="contexto.html">Contexto</a></li>
             <li><a class="dark" href="programa.html">Programa</a></li>
             <li><a class="dark" href="equipe.html">Equipe</a></li>
-            <li><a class="dark" href="publicacoes.html">Publicações</a></li>
+            <li class="has-children">
+              <a class="dark" href="#">Publica&ccedil;&otilde;es</a>
+              <ul class="children">
+                <li><a class="dark" href="publicacoes.html">Publica&ccedil;&otilde;es Cient&iacute;ficas</a></li>
+                <li><a class="dark" target="_blank" href="assets/pdf/portaria-mcti-1038-2015-amazon-face.pdf">Portaria Ministerial do AmazonFACE</a></li>
+                <li><a class="dark" target="_blank" href="assets/pdf/amazon-face-data-policy.pdf">Pol&iacute;tica de Dados do AmazonFACE</a></li>
+              </ul>
+            </li>
             <li><a class="dark" href="contato.html">Contato</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <div class="banner-pages">
-      <h2>PUBLICAÇÕES</h2>
-    </div>
+
     <div class="contato container center-pages">
       <h1><img width="32" src="assets/images/icones/endereco.svg">Endereço</h1>
       <div class="address">
         <address>
           AmazonFACE <br>
-          Instituto Nacional de Pesquisas da Amazônia (INPA) - Campus III <br>
-          Av. André Araújo 2936 - Manaus, Brasil <br>
+          Instituto Nacional de Pesquisas da Amaz&ocirc;nia (INPA) - Campus III <br>
+          Av. Andr&eacute; Ara&uacute;jo 2936 - Manaus, Brasil <br>
           CEP 69037-675
         </address>
       </div>
@@ -48,12 +63,15 @@
       <p>+55 92 36431968 / 1820</p>
       <h1>E-mail enviado com sucesso!</h1>
     </div>
+
     <footer class="footer">
       <img class="logo-footer" src="assets/images/logo-white.png">
-      <p>Avaliando os efeitos do aumento de CO<sub>2</sub> na resiliência da floresta amazônica.</p>
+      <p>Avaliando os efeitos do aumento de CO2 na resili&ecirc;ncia da floresta amaz&ocirc;nica.</p>
       <img class="support-footer" src="assets/images/apoios.png">
-      <p class="copyright-footer">Copyright &copy; AmazonFace.</p>
+      <p class="copyright-footer">Copyright &copy; AmazonFACE.</p>
     </footer>
-    <script src="assets/app.js"></script>
+
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/sub-menu.js"></script>
   </body>
 </html>

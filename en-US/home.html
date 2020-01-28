@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Amazônia e mudanças climáticas, como as mudanças climáticas ameaçam a maior floresta tropical do mundo?">
-    <meta name="keywords" content="Amazônia, mudanças climáticas, floresta, impacto sócio-econômicos, floresta amazônica, degradação climática">
+    <meta name="description" content="Amaz&ocirc;nia e mudan&ccedil;as clim&aacute;ticas, como as mudan&ccedil;as clim&aacute;ticas amea&ccedil;am a maior floresta tropical do mundo?">
+    <meta name="keywords" content="Amaz&ocirc;nia, mudan&ccedil;as clim&aacute;ticas, floresta, impacto s&oacute;cio-econ&ocirc;micos, floresta amaz&ocirc;nica, degrada&ccedil;&atilde;o clim&aacute;tica">
     <meta name="author" content="Lucas de Oliveira">
     <title>AmazonFACE</title>
-    <link rel="shortcut icon" type="image/png" href="../assets/images/logo-amazonface.png">
+    <link rel="shortcut icon" type="image/png" href="assets/images/logo-amazonface.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="../assets/carousel.css">
     <link rel="stylesheet" href="../assets/estilos.css">
   </head>
   <body id="site">
+
     <div class="controls">
       <ul>
         <li><a href="../index.html"><img width="24" src="../assets/images/icones/pt-BR.ico"></a></li>
@@ -21,6 +22,7 @@
         <li><a target="_blank" href="https://www.facebook.com/amazonface/"><img width="24" src="../assets/images/icones/facebook.png"></a></li>
       </ul>
     </div>
+    
     <header class="center-content">
       <div class="container">
         <div class="logotype">
@@ -30,18 +32,27 @@
         <label for="menu" class="menu-responsive">
           <img src="../assets/images/menu.svg">
         </label>
+
         <nav class="navigation">
           <ul class="flex">
             <li><a href="home.html">Home</a></li>
             <li><a href="context.html">Context</a></li>
             <li><a href="program.html">Program</a></li>
             <li><a href="people.html">People</a></li>
-            <li><a href="publications.html">Publications</a></li>
+            <li class="has-children">
+              <a href="#">Publications</a>
+              <ul class="children">
+                <li><a class="dark" href="publications.html">Scientific Publications</a></li>
+                <li><a class="dark" target="_blank" href="../assets/pdf/portaria-mcti-1038-2015-amazon-face.pdf">Ministerial Decree of AmazonFACE</a></li>
+                <li><a class="dark" target="_blank" href="../assets/pdf/amazon-face-data-policy.pdf">AmazonFACE Data Policy</a></li>
+              </ul>
+            </li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
+    
     <div class="banner">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -170,14 +181,17 @@
         </div>
       </div>
     </section>
+
     <footer class="footer">
       <img class="logo-footer" src="../assets/images/logo-white.png">
       <p>Assessing the effects of increased CO<sub>2</sub> on the resilience of the Amazon forest.</p>
       <img class="support-footer" src="../assets/images/apoios.png">
       <p class="copyright-footer">Copyright &copy; AmazonFACE.</p>
     </footer>
-    <script src="../assets/app.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="../assets/carousel.min.js"></script>
+
+    <script src="../assets/js/jquery-3.4.1.min.js"></script>
+    <script src="../assets/js/sub-menu.js"></script>
+    <script src="../assets/js/carousel.min.js"></script>
+    <script src="../assets/js/home-banner.js"></script>
   </body>
 </html>
