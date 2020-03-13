@@ -1,44 +1,25 @@
 <?php
-$name = $_POST['nome'];
-//pega os dados que foi digitado no ID name.
+	$subject 	  = 'AmazonFACE - Contato pelo Site';
+	$user_name    = $_POST['nome'];
+	$user_email   = $_POST['email'];
+	$user_phone   = $_POST['telefone'];
+	$user_message = $_POST['mensagem'];
+	
+	$email_to = 'cfascina@gmail.com';
+	// $email_to = 'contato@amazon-face.org';
+	$message =  'Nome: ' . $user_name . "<br />";
+	$message .= 'E-mail:' . $user_email . "<br />";
+	$message .= 'Telefone:' . $user_email . "<br />";
+	$message .= 'Mensagem:<br />' . $user_message;
 
-$email = $_POST['email'];
-//pega os dados que foi digitado no ID email.
+	$headers = "From: $user_email\r\n";
+	$headers .= "Reply-To: $user_email\r\n";
 
-$telefone = $_POST['telefone'];
-//pega os dados que foi digitado no ID message.
-
-$message = $_POST['mensagem'];
-//pega os dados que foi digitado no ID message.
-
-$subject = 'Formulario de contato do site';
-//pega os dados que foi digitado no ID sebject.
-
-$headers = "From: $email\r\n";
-$headers .= "Reply-To: $email\r\n";
-
-/*abaixo contém os dados que serão enviados para o email
-cadastrado para receber o formulário*/
-
-$corpo = "Formulário enviado\n";
-$corpo .= "Nome: " . $name . "\n";
-$corpo .= "Email: " . $email . "\n";
-$corpo .= "Telefone: " . $telefone . "\n";
-$corpo .= "Comentários: " . $message . "\n";
-
-$email_to = 'contato@amazon-face.org';
-//não esqueça de substituir este email pelo seu.
-
-$status = mail($email_to, $subject, $corpo, $headers);
-//enviando o email.
-
-if ($status) {
-  header('location: ', 'http://www.amazon-face.org/email-enviado.html')
-
-} else {
-  echo "<script> alert('Falha ao enviar o Formulário.'); </script>";
-  
-//mensagem de erro no envio. 
-
-}
+	if(mail($email_to, $subject, $message)) {
+		echo "E-mail enviado com sucesso!";
+	}
+	else {
+		echo "Falha ao enviar e-mail.<br />";
+		echo "Por favor, contate o administrador do site.";
+	}
 ?>
