@@ -1,3 +1,52 @@
+<?php
+	/**
+	 * Reference link: https://github.com/PHPMailer/PHPMailer/tree/5.2-stable/
+	 */
+
+	// SMTP needs accurate times, and the PHP time zone MUST be set
+	// This should be done in your php.ini, but this is how to do it if you don't have access to that
+	date_default_timezone_set('Etc/UTC');
+
+	require_once 'phpmailer-5.2/PHPMailerAutoload.php';
+
+	$mail = new PHPMailer;
+	$user_name    = $_POST['nome'];
+	$user_email   = $_POST['email'];
+	$user_phone   = $_POST['telefone'];
+	$user_message = $_POST['mensagem'];
+
+	// $mail->SMTPDebug Options:
+	// 0 = off (for production use)
+	// 1 = client messages
+	// 2 = client and server messages
+
+	// Old email at this file: contato@amazon-face.org
+
+	$mail->isSMTP();
+	$mail->SMTPDebug = 0;
+	$mail->Debugoutput = 'html';
+	$mail->Host = "mail.inpa.gov.br";
+	$mail->Port = 25;
+	$mail->SMTPAuth = false;
+	$mail->setFrom('site.amazonface.org@inpa.gov.br', 'AmazonFACE');
+	$mail->addReplyTo($user_email, $user_name);
+	$mail->addAddress('cfascina@gmail.com', 'Caio Fascina');
+	$mail->IsHTML(true);
+	$mail->Subject = 'Mensagem do Site';
+	$mail->Body =  '<b>Nome:</b> ' . $user_name . "<br />";
+	$mail->Body .= '<b>E-mail:</b> ' . $user_email . "<br />";
+	$mail->Body .= '<b>Telefone:</b> ' . $user_phone . "<br />";
+	$mail->Body .= '<b>Mensagem:</b> ' . nl2br($user_message);
+
+	// Send the message, check for errors
+	if(!$mail->send()) {
+		$response = "Desculpe, tivemos um erro ao enviar seu e-mail.";
+	    // echo "Mailer Error: " . $mail->ErrorInfo;
+	} else {
+		$response = "E-mail enviado com sucesso!";
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -13,8 +62,8 @@
 
     <div class="controls">
       <ul>
-        <li><a href="email-enviado.html"><img width="24" src="assets/images/icones/pt-BR.ico"></a></li>
-        <li><a href="en-US/email-send.html"><img width="24" src="assets/images/icones/en-US.ico"></a></li>
+        <li><a href="contato.html"><img width="24" src="assets/images/icones/pt-BR.ico"></a></li>
+        <li><a href="en-US/contact.html"><img width="24" src="assets/images/icones/en-US.ico"></a></li>
         <li><a target="_blank" href="https://www.facebook.com/amazonface/"><img width="24" src="assets/images/icones/facebook.png"></a></li>
       </ul>
     </div>
@@ -49,19 +98,11 @@
       </div>
     </header>
 
-    <div class="contato container center-pages">
-      <h1><img width="32" src="assets/images/icones/endereco.svg">Endereço</h1>
-      <div class="address">
-        <address>
-          AmazonFACE <br>
-          Instituto Nacional de Pesquisas da Amaz&ocirc;nia (INPA) - Campus III <br>
-          Av. Andr&eacute; Ara&uacute;jo 2936 - Manaus, Brasil <br>
-          CEP 69037-675
-        </address>
-      </div>
-      <h1><img width="32" src="assets/images/icones/call.svg">Telefone</h1>
-      <p>+55 92 36431968 / 1820</p>
-      <h1>E-mail enviado com sucesso!</h1>
+    <div class="banner-pages" id="banner-contato">
+      <h2>CONTATO</h2>
+    </div>
+    <div class="contato contato-left container center-pages">
+      <h1 style="justify-content: center;"><?=$response; ?></h1>
     </div>
 
     <footer class="footer">
