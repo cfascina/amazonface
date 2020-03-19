@@ -30,7 +30,7 @@
 	$mail->SMTPAuth = false;
 	$mail->setFrom('site.amazonface.org@inpa.gov.br', 'AmazonFACE');
 	$mail->addReplyTo($user_email, $user_name);
-	$mail->addAddress('cfascina@gmail.com', 'Caio Fascina');
+	$mail->addAddress('site.amazonface.org@inpa.gov.br', 'AmazonFACE');
 	$mail->IsHTML(true);
 	$mail->Subject = 'Mensagem do Site';
 	$mail->Body =  '<b>Nome:</b> ' . $user_name . "<br />";
