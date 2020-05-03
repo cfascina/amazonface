@@ -1,0 +1,29 @@
+main {
+  padding: 50px;
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+/* GALLERY */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gallery .item {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 15px 15px;
+}
+.gallery .item a.image-link {}
+.gallery .item a.image-link img {
+  display: block;
+  height: 150px;
+  width: 150px;
+}
+.gallery .item a.download {
+  display: inline-block;
+  font-size: 12px;
+  margin-top: 5px;
+}
