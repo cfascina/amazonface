@@ -344,23 +344,27 @@ a {
     box-shadow: 7px 5px 8px 2px rgba(0,0,0,.2);
   }
   .banner-pages#banner-contexto {
-     background: url(../assets/images/banner-contexto.jpg);
+     background-image: url(../assets/images/banner-contexto.jpg);
      background-size: cover;
   }
   .banner-pages#banner-programa {
-     background: url(../assets/images/banner-programa.jpg);
+     background-image: url(../assets/images/banner-programa.jpg);
      background-size: cover;
   }
   .banner-pages#banner-equipe {
-     background: url(../assets/images/banner-equipe.jpg);
+     background-image: url(../assets/images/banner-equipe.jpg);
      background-size: cover;
   }
   .banner-pages#banner-publicacoes {
-     background: url(../assets/images/banner-publicacoes.jpg);
+     background-image: url(../assets/images/banner-publicacoes.jpg);
      background-size: cover;
   }
   .banner-pages#banner-contato {
-     background: url(../assets/images/banner-contato.jpg);
+     background-image: url(../assets/images/banner-contato.jpg);
+     background-size: cover;
+  }
+  .banner-pages#banner-galeria {
+     background-image: url(../assets/images/banner-galeria.jpg);
      background-size: cover;
   }
   .banner-pages {
@@ -371,6 +375,7 @@ a {
     justify-content: center;
     align-items: center;
     background-repeat: no-repeat;
+    background-position: center center;
   }
   .center-text > div {
     display: block !important;

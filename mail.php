@@ -49,70 +49,33 @@
 
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AmazonFACE</title>
-    <link rel="shortcut icon" type="image/png" href="assets/images/logo-amazonface.png">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="assets/estilos.css">
-  </head>
-  <body id="site">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AmazonFACE</title>
+  <link rel="shortcut icon" type="image/png" href="assets/images/logo-amazonface.png">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="assets/estilos.css">
+</head>
+<body id="site">
+  
+  <?php include('includes/controls.html'); ?>
+  
+  <?php include('includes/header-dark.html'); ?>
 
-    <div class="controls">
-      <ul>
-        <li><a href="contato.html"><img width="24" src="assets/images/icones/pt-BR.ico"></a></li>
-        <li><a href="en-US/contact.html"><img width="24" src="assets/images/icones/en-US.ico"></a></li>
-        <li><a target="_blank" href="https://www.facebook.com/amazonface/"><img width="24" src="assets/images/icones/facebook.png"></a></li>
-      </ul>
-    </div>
+  <div class="banner-pages" id="banner-contato">
+    <h2>CONTATO</h2>
+  </div>
 
-    <header class="center-content">
-      <div class="container">
-        <div class="logotype">
-            <a href="index.html"><img src="assets/images/logo-amazonface.png"></a>
-        </div>
-        <input id="menu" class="menu__checkbox" type="checkbox" hidden>
-        <label for="menu" class="menu-responsive">
-          <img src="assets/images/icones/menu-dark.svg">
-        </label>
+  <div class="contato contato-left container center-pages">
+    <h1 style="justify-content: center;"><?=$response; ?></h1>
+  </div>
 
-        <nav class="navigation">
-          <ul class="flex">
-            <li><a class="dark" href="index.html">In&iacute;cio</a></li>
-            <li><a class="dark" href="contexto.html">Contexto</a></li>
-            <li><a class="dark" href="programa.html">Programa</a></li>
-            <li><a class="dark" href="equipe.html">Equipe</a></li>
-            <li class="has-children">
-              <a class="dark" href="#">Publica&ccedil;&otilde;es</a>
-              <ul class="children">
-                <li><a class="dark" href="publicacoes.html">Publica&ccedil;&otilde;es Cient&iacute;ficas</a></li>
-                <li><a class="dark" target="_blank" href="assets/pdf/portaria-mcti-1038-2015-amazon-face.pdf">Portaria Ministerial do AmazonFACE</a></li>
-                <li><a class="dark" target="_blank" href="assets/pdf/amazon-face-data-policy.pdf">Pol&iacute;tica de Dados do AmazonFACE</a></li>
-              </ul>
-            </li>
-            <li><a class="dark" href="contato.html">Contato</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+  <?php include('includes/footer.html'); ?> 
 
-    <div class="banner-pages" id="banner-contato">
-      <h2>CONTATO</h2>
-    </div>
-    <div class="contato contato-left container center-pages">
-      <h1 style="justify-content: center;"><?=$response; ?></h1>
-    </div>
+  <script src="assets/js/jquery-3.4.1.min.js"></script>
+  <script src="assets/js/sub-menu.js"></script>
 
-    <footer class="footer">
-      <img class="logo-footer" src="assets/images/logo-white.png">
-      <p>Avaliando os efeitos do aumento de CO2 na resili&ecirc;ncia da floresta amaz&ocirc;nica.</p>
-      <img class="support-footer" src="assets/images/apoios.png">
-      <p class="copyright-footer">Copyright &copy; AmazonFACE.</p>
-    </footer>
-
-    <script src="assets/js/jquery-3.4.1.min.js"></script>
-    <script src="assets/js/sub-menu.js"></script>
-  </body>
+</body>
 </html>
