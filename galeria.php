@@ -37,7 +37,7 @@
                   '<img src="assets/images/gallery/thumb/' . $imgFile . '">' .
                 '</a>' .
                 '<a href="assets/images/gallery/high/' . $imgHighFile . '" class="download" target="_blank">' .
-                  'Alta Resolução' . 
+                  'Alta Resolu&ccedil;&atilde;o' . 
                 '</a>' .
               '</div>';
           }
@@ -57,14 +57,14 @@
       tLoading: 'Carregando...',
       gallery: {
         tPrev: 'Anterior',
-        tNext: 'Pŕoxima',
+        tNext: 'Pr&oacute;xima',
         tCounter: 'Foto %curr% de %total%'
       },
       image: {
-        tError: '<a href="%url%">Não foi possível carregar a imagem.</a>'
+        tError: '<a href="%url%">N&atilde;o foi poss	&iacute;vel carregar a imagem.</a>'
       },
       ajax: {
-        tError: '<a href="%url%">Não foi possível carregar o conteúdo.</a>'
+        tError: '<a href="%url%">N&atilde;o foi poss	&iacute;vel carregar o conteúdo.</a>'
       }
     });
 
