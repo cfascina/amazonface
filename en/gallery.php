@@ -23,6 +23,20 @@
   </div>
 
   <main>
+    <h1>
+      Here we present 205 photographs of Jo&atilde;o Marcos Rosa, taken between April 19 and 27, 
+      2017, as part of the photo album production for the AmazonFACE and Climate Change program 
+      in the Amazon Region (financed by CNPq, under process n&ordm; 441877/2016- 8, coordinated 
+      by David Lapola, Unicamp).
+    </h1>
+    <h1>
+      The use of these images is allowed as long as the copyright is recognized as follows: 
+      Jo&atilde;o M. Rosa/AmazonFACE
+    </h1>
+    <h1>
+      Questions about use should be sent to <strong>site.amazonface.org@inpa.gov.br</strong>
+    </h1>
+
     <div class="gallery">
       <?php
         $imgFiles = scandir('../assets/images/gallery/thumb');

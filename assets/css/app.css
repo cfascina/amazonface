@@ -3,12 +3,22 @@ main {
   margin: 0 auto;
   max-width: 1920px;
 }
+main h1 {
+  color: #777;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+}
+main h1:first-of-type {
+  margin-top: 0;
+}
 
 /* GALLERY */
 .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 50px;
 }
 .gallery .item {
   align-items: center;

@@ -23,6 +23,21 @@
   </div>
 
   <main>
+    <h1>
+      Apresentamos aqui 205 fotografias de Jo&atilde;o Marcos Rosa, tiradas no per&iacute;odo 
+      entre 19 e 27 de Abril de 2017, como parte da produ&ccedil;&atilde;o do &aacute;lbum de 
+      fotos do programa <strong>AmazonFACE e Mudan&ccedil;as Clim&aacute;ticas na Regi&atilde;o 
+      Amaz&ocirc;nica</strong> (financiada pelo CNPq, sob processo n&ordm; 441877/2016-8, 
+      coordenado por David Lapola, Unicamp).
+    </h1>
+    <h1>
+      O uso dessas imagens &eacute; permitido desde que os direitos autorais sejam reconhecidos 
+      da seguinte forma: Jo&atilde;o M. Rosa/AmazonFACE
+    </h1>
+    <h1>
+      D&uacute;vidas sobre o uso devem ser enviadas para <strong>site.amazonface.org@inpa.gov.br</strong>
+    </h1>
+  
     <div class="gallery">
       <?php
         $imgFiles = scandir('assets/images/gallery/thumb');
@@ -64,7 +79,7 @@
         tError: '<a href="%url%">N&atilde;o foi poss	&iacute;vel carregar a imagem.</a>'
       },
       ajax: {
-        tError: '<a href="%url%">N&atilde;o foi poss	&iacute;vel carregar o conteúdo.</a>'
+        tError: '<a href="%url%">N&atilde;o foi poss	&iacute;vel carregar o conte&uacute;do.</a>'
       }
     });
 
