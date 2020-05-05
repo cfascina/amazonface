@@ -22,6 +22,39 @@
   <div class="container publicacoes center-pages">
     <div>
       <p>
+        Laynara F. Lugli, 2020. 
+        <strong>
+          <a
+            style="color: #2062ae; text-decoration: underline;" 
+            target="blanck" 
+            href="https://nph.onlinelibrary.wiley.com/doi/full/10.1111/nph.16366">
+            Digging deeper? Biomass allocation patterns in trees and lianas in tropical seasonal forests.</a>
+        </strong>
+        New Pythologist.
+      </p>
+      <p>
+        Anja Rammig, 2020.
+        <strong>
+          <a
+            style="color: #2062ae; text-decoration: underline;" 
+            target="blanck" 
+            href="https://www.nature.com/articles/d41586-020-00423-8">
+            Tropical carbon sinks are saturating at different times on different continents.</a>
+        </strong>
+        Nature.
+      </p>
+      <p>
+        Amanda L. Cordeiro, 2020.
+        <strong>
+          <a
+            style="color: #2062ae; text-decoration: underline;" 
+            target="blanck" 
+            href="https://onlinelibrary.wiley.com/doi/full/10.1002/pei3.10010">
+            Fine‐root dynamics vary with soil depth and precipitation in a low‐nutrient tropical forest in the Central Amazonia.</a>
+        </strong>
+        Journal of Plant‐Environment Interactions.
+      </p>
+      <p>
         Fleischer, K. et al., 2019. <strong><a style="color: #2062ae; text-decoration: underline;" target="blanck" href="https://www.nature.com/articles/s41561-019-0404-9">Amazon forest response to CO2 fertilization dependent on plant phosphorus acquisition.</a></strong> Nature Geoscience 12: 736-741.
       </p>
       <p>
