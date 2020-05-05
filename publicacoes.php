@@ -51,9 +51,9 @@
             style="color: #2062ae; text-decoration: underline;" 
             target="blanck" 
             href="https://onlinelibrary.wiley.com/doi/full/10.1002/pei3.10010">
-            Fine‐root dynamics vary with soil depth and precipitation in a low‐nutrient tropical forest in the Central Amazonia.</a>
+            Fine&#45;root dynamics vary with soil depth and precipitation in a low&#45;nutrient tropical forest in the Central Amazonia.</a>
         </strong>
-        Journal of Plant‐Environment Interactions.
+        Journal of Plant&#45;Environment Interactions.
       </p>
       <p>
         Fleischer, K. et al., 2019. <strong><a style="color: #2062ae; text-decoration: underline;" target="blanck" href="https://www.nature.com/articles/s41561-019-0404-9">Amazon forest response to CO2 fertilization dependent on plant phosphorus acquisition.</a></strong> Nature Geoscience 12: 736-741.
